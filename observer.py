@@ -20,6 +20,7 @@ class Publisher:
         for subscriber in self.subscribers:
             subscriber.update(message)
 
+
 pub = Publisher()
 
 bob = Subscriber(name="Bob")

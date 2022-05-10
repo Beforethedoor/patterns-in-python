@@ -1,5 +1,5 @@
 class Subscriber:
-    def __init__(self, name: str) -> None:
+    def __init__(self, name: str):
         self.name = name
 
     def update(self, message: str) -> None:
@@ -7,7 +7,7 @@ class Subscriber:
 
 
 class Publisher:
-    def __init__(self) -> None:
+    def __init__(self):
         self.subscribers = set()
 
     def register(self, who: Subscriber) -> None:

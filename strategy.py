@@ -22,7 +22,7 @@ class CasualBike(Bike):
 
 class Human():
 
-    def __init__(self, bike: Bike) -> None:
+    def __init__(self, bike: Bike):
         self.bike = bike
 
     def run(self) -> None:
